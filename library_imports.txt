@@ -1,5 +1,8 @@
 import tensorflow as tf
 
+# NLP
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # RNN
 from tensorflow.keras.layers import Input, SimpleRNN, GRU, LSTM, Dense, Flatten, GlobalMaxPooling1D
@@ -11,6 +14,10 @@ from tensorflow.keras.optimizers import SGD, Adam
 from tensorflow.keras.layers import Input, Conv2D, Dense, Flatten, Dropout
 from tensorflow.keras.models import Model
 
+from tensorflow.keras.layers import Input, Dense, GlobalMaxPooling1D
+from tensorflow.keras.layers import Conv1D, MaxPooling1D, Embedding
+
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 
